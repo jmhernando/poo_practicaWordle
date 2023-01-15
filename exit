@@ -1,0 +1,181 @@
+warning: LF will be replaced by CRLF in Cookitos/src/Interfaz.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Cookitos/src/Interfaz.java.
+The file will have its original line endings in your working directory
+[1mdiff --git a/Cookitos/build/classes/cookitos/Cookitos.class b/Cookitos/build/classes/cookitos/Cookitos.class[m
+[1mindex 1f8f0f7..20082d6 100644[m
+Binary files a/Cookitos/build/classes/cookitos/Cookitos.class and b/Cookitos/build/classes/cookitos/Cookitos.class differ
+[1mdiff --git a/Cookitos/src/Interfaz.form b/Cookitos/src/Interfaz.form[m
+[1mindex 769eecd..4d3b458 100644[m
+[1m--- a/Cookitos/src/Interfaz.form[m
+[1m+++ b/Cookitos/src/Interfaz.form[m
+[36m@@ -23,13 +23,32 @@[m
+   <Layout>[m
+     <DimensionLayout dim="0">[m
+       <Group type="103" groupAlignment="0" attributes="0">[m
+[31m-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>[m
+[32m+[m[32m          <Group type="102" alignment="0" attributes="0">[m
+[32m+[m[32m              <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>[m
+[32m+[m[32m              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace pref="184" max="32767" attributes="0"/>[m
+[32m+[m[32m          </Group>[m
+       </Group>[m
+     </DimensionLayout>[m
+     <DimensionLayout dim="1">[m
+       <Group type="103" groupAlignment="0" attributes="0">[m
+[31m-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>[m
+[32m+[m[32m          <Group type="102" alignment="0" attributes="0">[m
+[32m+[m[32m              <EmptySpace max="-2" attributes="0"/>[m
+[32m+[m[32m              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>[m
+[32m+[m[32m              <EmptySpace pref="366" max="32767" attributes="0"/>[m
+[32m+[m[32m          </Group>[m
+       </Group>[m
+     </DimensionLayout>[m
+   </Layout>[m
+[32m+[m[32m  <SubComponents>[m
+[32m+[m[32m    <Component class="javax.swing.JLabel" name="jLabel1">[m
+[32m+[m[32m      <Properties>[m
+[32m+[m[32m        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">[m
+[32m+[m[32m          <Font name="Microsoft YaHei" size="24" style="1"/>[m
+[32m+[m[32m        </Property>[m
+[32m+[m[32m        <Property name="text" type="java.lang.String" value="COOKITOS GAME"/>[m
+[32m+[m[32m        <Property name="toolTipText" type="java.lang.String" value=""/>[m
+[32m+[m[32m      </Properties>[m
+[32m+[m[32m    </Component>[m
+[32m+[m[32m  </SubComponents>[m
+ </Form>[m
+[1mdiff --git a/Cookitos/src/Interfaz.java b/Cookitos/src/Interfaz.java[m
+[1mindex 51776ae..424719f 100644[m
+[1m--- a/Cookitos/src/Interfaz.java[m
+[1m+++ b/Cookitos/src/Interfaz.java[m
+[36m@@ -23,17 +23,29 @@[m [mpublic class Interfaz extends javax.swing.JFrame {[m
+     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents[m
+     private void initComponents() {[m
+ [m
+[32m+[m[32m        jLabel1 = new javax.swing.JLabel();[m
+[32m+[m
+         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);[m
+ [m
+[32m+[m[32m        jLabel1.setFont(new java.awt.Font("Microsoft YaHei", 1, 24)); // NOI18N[m
+[32m+[m[32m        jLabel1.setText("COOKITOS GAME");[m
+[32m+[m[32m        jLabel1.setToolTipText("");[m
+[32m+[m
+         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());[m
+         getContentPane().setLayout(layout);[m
+         layout.setHorizontalGroup([m
+             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)[m
+[31m-            .addGap(0, 400, Short.MAX_VALUE)[m
+[32m+[m[32m            .addGroup(layout.createSequentialGroup()[m
+[32m+[m[32m                .addGap(177, 177, 177)[m
+[32m+[m[32m                .addComponent(jLabel1)[m
+[32m+[m[32m                .addContainerGap(184, Short.MAX_VALUE))[m
+         );[m
+         layout.setVerticalGroup([m
+             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)[m
+[31m-            .addGap(0, 300, Short.MAX_VALUE)[m
+[32m+[m[32m            .addGroup(layout.createSequentialGroup()[m
+[32m+[m[32m                .addContainerGap()[m
+[32m+[m[32m                .addComponent(jLabel1)[m
+[32m+[m[32m                .addContainerGap(366, Short.MAX_VALUE))[m
+         );[m
+ [m
+         pack();[m
+[36m@@ -75,6 +87,7 @@[m [mpublic class Interfaz extends javax.swing.JFrame {[m
+     }[m
+ [m
+     // Variables declaration - do not modify//GEN-BEGIN:variables[m
+[32m+[m[32m    private javax.swing.JLabel jLabel1;[m
+     // End of variables declaration//GEN-END:variables[m
+ [m
+ }[m
+[1mdiff --git a/Cookitos/src/Pack_Palabra/Palabra.java b/Cookitos/src/Pack_Palabra/Palabra.java[m
+[1mindex 02e73c0..958a367 100644[m
+[1m--- a/Cookitos/src/Pack_Palabra/Palabra.java[m
+[1m+++ b/Cookitos/src/Pack_Palabra/Palabra.java[m
+[36m@@ -1,13 +1,39 @@[m
+ /*[m
+[31m- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license[m
+[31m- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template[m
+[32m+[m[32m * @author sohaib[m
+  */[m
+ package Pack_Palabra;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+ [m
+[31m-/**[m
+[31m- *[m
+[31m- * @author sohaib[m
+[31m- */[m
+ public class Palabra {[m
+[32m+[m[32m    private ArrayList <Enum> numLetras; // Contiene 5 o 6 elementos[m
+[32m+[m[32m    private char palabra[];[m
+[32m+[m[32m    private boolean regalo_de_letra;[m
+[32m+[m
+[32m+[m[32m    //INICIALIZACION DE ATRIBUTOS-------------------------------------------------------[m
+[32m+[m[32m    public Palabra(ArrayList<Enum> numLetras, char[] palabra, boolean regalo_de_letra) {[m
+[32m+[m[41m        [m
+[32m+[m[32m        this.numLetras = numLetras;                                 // ENUMERADOR DE LETRAS[m[41m               [m
+[32m+[m[32m        if(palabra.length==numLetras.size()){                      // PALABRA DEL TAMAÑO DEL NUMERO DE LETRAS[m
+[32m+[m[32m         this.palabra = palabra;                                  //PALABRA QUE SE VA A USAR[m
+[32m+[m[32m        }else{[m
+[32m+[m[32m         //BORRAR PARA QUE SEA DESDE LA INTERVAZ[m
+[32m+[m[32m        }[m[41m                 [m
+[32m+[m[32m        this.regalo_de_letra = regalo_de_letra;                //COMPROBAR SI SE VA A DAR REGALO DE LETRA O NO[m[41m [m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    //METODO GET TAMAÑO PALABRA[m
+[32m+[m[32m    public int getLongPalabra(){[m
+[32m+[m[32m        return this.palabra.length;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[32m    // Metodo Comprobar_colocadas[m
+[32m+[m[32m    private void comprobar_colocadas(){[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+     [m
+ }[m
+[1mdiff --git a/Cookitos/src/cookitos/Cookitos.java b/Cookitos/src/cookitos/Cookitos.java[m
+[1mindex 3c22a72..0365dbc 100644[m
+[1m--- a/Cookitos/src/cookitos/Cookitos.java[m
+[1m+++ b/Cookitos/src/cookitos/Cookitos.java[m
+[36m@@ -1,11 +1,21 @@[m
+ package cookitos;[m
+[32m+[m[32mimport Pack_Palabra.Palabra;[m
+[32m+[m[32mimport java.util.ArrayList;[m
+[32m+[m
+ /**[m
+  * @author sohaib, Jose, Laura[m
+  */[m
+ public class Cookitos {[m
+ [m
+     public static void main(String[] args) {[m
+[32m+[m[32m        ArrayList<Enum> numLetras=null;[m
+[32m+[m[32m        char palabra[]=new char[6];[m
+[32m+[m[32m        boolean regalo_de_letra=false;[m
+[32m+[m[41m        [m
+[32m+[m[32m       Palabra l1;[m
+[32m+[m[32m       l1=new Palabra(numLetras,palabra,regalo_de_letra);[m
+ [m
+[32m+[m[41m       [m
+     }[m
+ }    [m
+ [m
+[1mdiff --git a/Cookitos/src/cookitos/Partida.java b/Cookitos/src/cookitos/Partida.java[m
+[1mindex a1300f6..afcf622 100644[m
+[1m--- a/Cookitos/src/cookitos/Partida.java[m
+[1m+++ b/Cookitos/src/cookitos/Partida.java[m
+[36m@@ -1,8 +1,7 @@[m
+[31m-package cookitos;[m
+ /**[m
+[31m- *[m
+[31m- * @author sohaib, Jose, Laura[m
+[32m+[m[32m * @author Jose[m
+  */[m
+[32m+[m[32mpackage cookitos;[m
+ public class Partida {[m
+     private static int numPalabras;[m
+     private boolean regalo_de_palabra;[m

@@ -1,0 +1,37 @@
+Expresiones Lambda en Java, Proyecto Cookitos
+
+1. Almacen_de_palabra->
+2. Palabra->
+3. Pista_de_palabra->
+4. Entrenamiento->
+5. Intento->
+6. Partida->
+7. Marcador->
+8. Configuración->
+9. Almacen_de_partida->
+10. Estadisticas->
+11. Jugador->
+12. Almacen_de_jugadores->
+
+
+1--> Guardado y recuperación de todos los datos del sistema en disco (serialización). Se podrán
+guardar los datos en un fichero binario (serializado). También se permitirá la carga de los
+datos desde un fichero binario (serializado): 
+Laura, Soha, Jose (mirarlo pero hacerlo al final con solo un metodo)
+
+2--> Investigar GUI: Laura, Soha, Jose ---> (lo hacemos todos para nuestras clases juntos)
+
+3--> Jugador, Almacen_de_jugadores (tema admins...); Laura
+
+4--> Palabra, Almacen_de_Palabras; Soha
+
+5--> Partida, Almacen_de_partidas; José
+
+6-->Configuracion (dejarlo para cuando se acabe lo anterior)
+
+7(Para lo último)--> pista_de_letra, Marcador, Intento, Entrenamiento, Estadistica
+
+
+
+
+
